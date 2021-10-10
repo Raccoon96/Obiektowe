@@ -45,7 +45,7 @@ class Okrag {
 
 
     public double getPowierzchnia() {
-        return Math.PI * 2 * this.promien;
+        return Math.PI * this.promien * this.promien;
     }
 
     public float getSrednica() {
