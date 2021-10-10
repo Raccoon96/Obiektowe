@@ -25,12 +25,17 @@ public class Main {
         Scanner in3 = new Scanner(System.in);
         int first = in3.nextInt();
         int last = in3.nextInt();
+        if(first>last)
+        {
+            int box = first;
+            first = last;
+            last = box;
+        }
         Random rand = new Random();
         a = rand.nextInt(last-first+1)+first;
         b = rand.nextInt(last-first+1)+first;
         c = rand.nextInt(last-first+1)+first;
-        int f = rand.nextInt((last-first+1)+first);
-        System.out.println(a + " " + b + " " + c + " " + f);
+        System.out.println(a + " " + b + " " + c);
         System.out.println(czyTrojkat(a, b, c));
     }
 
