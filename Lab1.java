@@ -10,7 +10,7 @@ public class Main {
         System.out.println("Podaj liczbe: ");
         Scanner in = new Scanner(System.in);
         double x = in.nextDouble();
-        System.out.println(doKwadratu(x));
+        System.out.println(Kwadrat(x));
 
         //zad 8 (testowe do sprawdzenia poprawnosci funkcji czyTrojkat - liczby wybierane przez uzytkownika)
         System.out.println("Podaj trzy liczby: ");
@@ -39,8 +39,8 @@ public class Main {
         System.out.println(czyTrojkat(a, b, c));
     }
 
-    public static double doKwadratu(double a) {
-        return a*a;
+    public static double Kwadrat(double a) {
+        return Math.sqrt(a);
     }
 
     public static boolean czyTrojkat(double a, double b, double c) {
